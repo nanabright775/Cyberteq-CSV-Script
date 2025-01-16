@@ -10,4 +10,9 @@ macOS/Linux: `source venv/bin/activate`
 
 install the requirements: `pip install -r requirements.txt`
 
-commands to run: `python script.py input_vulnerabilities.csv output_vulnerabilities.csv --vulnerabilities "SSL certificate can't be trusted, SSL self-signed certificate, Web server transmits cleartext credentials"`
+commands to run: `python script_name.py \
+    --vulnerability "/path/to/vulnerability5.csv" \
+    --jira "/path/to/Jira5.csv" \
+    --intermediate_output "/path/to/updated_vulnerability5.csv" \
+    --final_output "/path/to/final_processed_vulnerability.csv" \
+    --vulnerabilities "vulnerability_title_1,vulnerability_title_2,vulnerability_title_3"`
